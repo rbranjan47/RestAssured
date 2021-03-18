@@ -27,7 +27,7 @@ public class addBooks
 		JsonPath js = new JsonPath(response_post);
 		String id = js.get("ID");
 		String msg = js.get("Msg");
-		System.out.println("book :"+id+"successfully added");
+		System.out.println("book :"+id+" "+msg);
 		
 		//delete users
 		String response_delete = given().contentType(ContentType.JSON).header("Content-Type","application/json").body(payloads_addbooks.body_deletebooks(id))
