@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="restassured.restassured_demo.Dynamic_JSON">
+      <class name="restassured_addbooks.addBooks">
         <methods>
-          <include name="addbook"/>
+          <include name="addbooks_post"/>
         </methods>
-      </class> <!-- restassured.restassured_demo.Dynamic_JSON -->
+      </class> <!-- restassured_addbooks.addBooks -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
