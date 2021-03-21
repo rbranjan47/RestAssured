@@ -20,17 +20,18 @@ public class createIssue
 		String response_Session= given().log().all().contentType(ContentType.JSON).header("Content-Type","application/json").body(jira_BODY.loggedIN())
 		.when().post("/rest/auth/1/session").then().statusCode(200).extract().asString();
 		
+		System.out.println(response_Session);
 		//Using JSONPath we will extract the Value of 
 		JsonPath js = new JsonPath(response_Session);
-		String name = js.get("name");
-		String value = js.get("value");
+		String name = js.get("session.name");
+		String value = js.get("session.value");
 		
-		System.out.println("Successfully loggedIn with name :"+name+"value :"+value);
+		System.out.println("Successfully loggedIn with name :"+name+" & value :"+value);
 		
 		
 		//Geting Response for POSTING
 		String response_issue = given().log().all().contentType(ContentType.JSON).header("Content-Type","application/json")
-				.header("Cookie",name+"="+value)
+				.cookie(name , value)
 		.body(jira_BODY.createBody()).when().post("/rest/api/2/issue").then().statusCode(201).extract().asString();
 		
 		JsonPath jso = new JsonPath(response_issue);
@@ -47,7 +48,7 @@ public class createIssue
 		String email = jsop.get("emailAddress");
 		String name_display = jsop.get("displayName");
 		
-		System.out.println("Succesfully added with "+email+" & "+name_display);
+		System.out.println("Succesfully added with "+email+" & "+name_display); 
 		
 	}
 }
