@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Jira_API.createIssue">
+      <class name="Jira_API.JIRA">
         <methods>
-          <include name="createissue"/>
+          <include name="jiraAPI"/>
         </methods>
-      </class> <!-- Jira_API.createIssue -->
+      </class> <!-- Jira_API.JIRA -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

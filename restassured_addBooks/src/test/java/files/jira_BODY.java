@@ -12,8 +12,8 @@ public class jira_BODY
 				+ "        {\r\n"
 				+ "            \"key\" : \"REST1234\"\r\n"
 				+ "        },\r\n"
-				+ "        \"summary\" : \"Profile Image is not displaying Correctly\",\r\n"
-				+ "        \"description\" : \"After Uploading the Profile Image, it is displaying as blur\",\r\n"
+				+ "        \"summary\" : \"User is not able to send messages\",\r\n"
+				+ "        \"description\" : \"Send button is not working when user clicks it to send message\",\r\n"
 				+ "        \"issuetype\" : \r\n"
 				+ "        {\r\n"
 				+ "            \"name\" :\"Bug\"\r\n"
@@ -37,7 +37,7 @@ public class jira_BODY
 	public static String commentsbody()
 	{
 		String comments = "{\r\n"
-				+ "    \"body\": \"Hey! this issue is not Reproducable from my end. Can you Please attach a Video or Image.\",\r\n"
+				+ "    \"body\": \"Hey! this issue is Blocker. I am fixing it ASAP.\",\r\n"
 				+ "    \"visibility\": {\r\n"
 				+ "        \"type\": \"role\",\r\n"
 				+ "        \"value\": \"Administrators\"\r\n"
