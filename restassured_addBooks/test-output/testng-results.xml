@@ -2,20 +2,19 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-23T22:45:58 IST" name="Default suite" finished-at="2021-03-23T22:46:16 IST" duration-ms="18034">
+  <suite started-at="2021-03-29T22:34:20 IST" name="Default suite" finished-at="2021-03-29T22:34:44 IST" duration-ms="24569">
     <groups>
     </groups>
-    <test started-at="2021-03-23T22:45:58 IST" name="Default test" finished-at="2021-03-23T22:46:16 IST" duration-ms="18034">
-      <class name="Jira_API.JIRA">
-        <test-method signature="jiraAPI()[pri:0, instance:Jira_API.JIRA@2a54a73f]" started-at="2021-03-23T22:45:58 IST" name="jiraAPI" finished-at="2021-03-23T22:46:16 IST" duration-ms="17897" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+    <test started-at="2021-03-29T22:34:20 IST" name="Default test" finished-at="2021-03-29T22:34:44 IST" duration-ms="24569">
+      <class name="Oauth2.Oauth_demo">
+        <test-method signature="oauth_demo()[pri:0, instance:Oauth2.Oauth_demo@3d6f0054]" started-at="2021-03-29T22:34:20 IST" name="oauth_demo" finished-at="2021-03-29T22:34:44 IST" duration-ms="24478" status="FAIL">
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
             <message>
-              <![CDATA[Cannot invoke "java.lang.Integer.intValue()" because the return value of "io.restassured.internal.common.path.ObjectConverter.convertObjectTo(Object, java.lang.Class)" is null]]>
+              <![CDATA[Index 1 out of bounds for length 1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "io.restassured.internal.common.path.ObjectConverter.convertObjectTo(Object, java.lang.Class)" is null
-at io.restassured.path.json.JsonPath.getInt(JsonPath.java:245)
-at Jira_API.JIRA.jiraAPI(JIRA.java:85)
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+at Oauth2.Oauth_demo.oauth_demo(Oauth_demo.java:51)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -46,11 +45,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jiraAPI -->
-      </class> <!-- Jira_API.JIRA -->
+        </test-method> <!-- oauth_demo -->
+      </class> <!-- Oauth2.Oauth_demo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
