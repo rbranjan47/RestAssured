@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Jira_API.JIRA">
+      <class name="Oauth2.Oauth_demo">
         <methods>
-          <include name="jiraAPI"/>
+          <include name="oauth_demo"/>
         </methods>
-      </class> <!-- Jira_API.JIRA -->
+      </class> <!-- Oauth2.Oauth_demo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
