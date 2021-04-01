@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Oauth2.Oauth_demo">
+      <class name="POJO_classes.pojo_rereqs">
         <methods>
-          <include name="oauth_demo"/>
+          <include name="rereqs_getUsers"/>
         </methods>
-      </class> <!-- Oauth2.Oauth_demo -->
+      </class> <!-- POJO_classes.pojo_rereqs -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
