@@ -8,7 +8,6 @@ import io.restassured.parsing.Parser;
 import static io.restassured.RestAssured.*;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class pojo_rereqs 
@@ -18,7 +17,7 @@ public class pojo_rereqs
 	{
 		RestAssured.baseURI = "https://reqres.in";
 		
-		//expect default parser, explictily tell it is of JSON type
+		//expect default parser, explicitly tell it is of JSON type
 		getUsers response = given().log().all().queryParam("page", "2").expect().defaultParser(Parser.JSON).when()
 				           .get("/api/users").as(getUsers.class);
 		System.out.println(response.getPage());

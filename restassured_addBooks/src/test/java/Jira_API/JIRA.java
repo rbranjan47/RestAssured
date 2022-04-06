@@ -18,7 +18,7 @@ public class JIRA
 	public void jiraAPI()
 	{
 		
-		RestAssured.baseURI = "http://localhost:8080";
+		RestAssured.baseURI = "http://localhost:9090";
 		
 		//Using session filter so that, it understand for every request a new session is created every time
 		SessionFilter session = new SessionFilter();

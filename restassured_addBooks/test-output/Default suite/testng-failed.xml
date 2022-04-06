@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="POJO_classes.pojo_rereqs">
+      <class name="twilio_otp_verification.otp_verification">
         <methods>
-          <include name="rereqs_getUsers"/>
+          <include name="amazonOTP_handle"/>
         </methods>
-      </class> <!-- POJO_classes.pojo_rereqs -->
+      </class> <!-- twilio_otp_verification.otp_verification -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
