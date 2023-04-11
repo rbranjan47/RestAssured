@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="restassured.reqres.JSON_localPatch">
+      <class name="restassured.reqres.getUser">
         <methods>
-          <include name="jsonPatchtest"/>
+          <include name="get_user"/>
         </methods>
-      </class> <!-- restassured.reqres.JSON_localPatch -->
+      </class> <!-- restassured.reqres.getUser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

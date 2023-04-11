@@ -37,7 +37,7 @@ public class restassuredDemo
 		//Update Place
 		String new_address="bhuli c block q.no.-441 bhuli nagar";
 		given().log().all().headers("Content-Type","application/json").body("{\r\n"
-				+ "    \"place_id\":\""+placeID+"\",\r\n"
+				+ "    \"p lace_id\":\""+placeID+"\",\r\n"
 				+ "    \"address\":\""+new_address+"\",\r\n"
 				+ "    \"key\":\"qaclick123\"\r\n"
 				+ "}").when().put("maps/api/place/update/json?key=qaclick123").then().assertThat().statusCode(200)

@@ -4,6 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
+
+import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import static org.hamcrest.Matchers.*;
 
@@ -11,14 +13,16 @@ public class getUser
 {
 
 	//gettting response
-	@Test (priority = 1)
+	@Test
 	public void get_user()
 	{
-		Response response = get("https://reqres.in/api/users?page=2");
+		Response response = RestAssured.get("https://reqres.in/api/users?page=2");
+		
+		
 		//response as string
 		System.out.println(response.asString());
 		//response Body
-		System.out.println(response.getBody().asString());
+		System.out.println("Body: "+ response.getBody().asString());
 		//status code
 		System.out.println(response.getStatusCode());
 		//content type
@@ -31,13 +35,8 @@ public class getUser
 		//checking Status code
 		Assert.assertEquals(response.statusCode(), 200);
 		
-	}
-	
-	@Test(priority = 2)
-	 public void test_u()
-	{
-		given().get("https://reqres.in/api/users?page=2")
-		.then().statusCode(200)
-		.body("data.id", equalTo(2));
+		
+		int statusCode = response.getStatusCode();
+		Assert.assertEquals(statusCode, 201);
 	}
 }

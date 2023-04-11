@@ -18,6 +18,7 @@ public class JSON_localPatch
 	public void jsonPatchtest() 
 	{
 		RestAssured.baseURI = "http://localhost:3000/";
+		
 		//first getting the users details in Local API
 		given().log().all().contentType(ContentType.JSON).get("/users").then().statusCode(200).log().all();
 		

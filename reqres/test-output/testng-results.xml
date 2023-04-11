@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-17T01:41:57 IST" name="Default suite" finished-at="2021-03-17T01:42:00 IST" duration-ms="3690">
+  <suite started-at="2023-03-21T23:22:35 IST" name="Default suite" finished-at="2023-03-21T23:22:38 IST" duration-ms="3325">
     <groups>
     </groups>
-    <test started-at="2021-03-17T01:41:57 IST" name="Default test" finished-at="2021-03-17T01:42:00 IST" duration-ms="3690">
-      <class name="restassured.reqres.JSON_localPatch">
-        <test-method signature="jsonPatchtest()[pri:0, instance:restassured.reqres.JSON_localPatch@550ee7e5]" started-at="2021-03-17T01:41:57 IST" name="jsonPatchtest" finished-at="2021-03-17T01:42:00 IST" duration-ms="3615" status="PASS">
+    <test started-at="2023-03-21T23:22:35 IST" name="Default test" finished-at="2023-03-21T23:22:38 IST" duration-ms="3325">
+      <class name="restassured.reqres.getAndPost">
+        <test-method signature="restAssuredTest()[pri:0, instance:restassured.reqres.getAndPost@47faa49c]" started-at="2023-03-21T23:22:35 IST" name="restAssuredTest" finished-at="2023-03-21T23:22:38 IST" duration-ms="3267" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jsonPatchtest -->
-      </class> <!-- restassured.reqres.JSON_localPatch -->
+        </test-method> <!-- restAssuredTest -->
+      </class> <!-- restassured.reqres.getAndPost -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
