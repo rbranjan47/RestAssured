@@ -25,7 +25,7 @@ public class createBookingPOST {
 		requestSpecifications = requestSpecifications.log().all();   
 		
 		 
-		requestSpecifications.baseUri("https://restful-booker.herokuapp.com/");
+		requestSpecifications.baseUri(" ");
 		requestSpecifications.basePath("booking");
 		
 		requestSpecifications.body("{\r\n"

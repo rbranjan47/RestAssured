@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="restassured.reqres.getUser">
+      <class name="restassured.reqres.dataDriven_test">
         <methods>
-          <include name="get_user"/>
+          <include name="dataDriven_post" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- restassured.reqres.getUser -->
+      </class> <!-- restassured.reqres.dataDriven_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
