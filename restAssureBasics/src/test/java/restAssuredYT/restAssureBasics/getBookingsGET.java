@@ -16,7 +16,7 @@ public class getBookingsGET {
 		requestSpecifications.basePath("booking/{id}");
 
 		// passing booking id as parameters
-		requestSpecifications.pathParam("id", 10);
+		requestSpecifications.pathParam("id", 2641);
 
 		// getting responses
 		Response responses = requestSpecifications.get();

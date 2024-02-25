@@ -16,7 +16,7 @@ public class postBookingsTest {
 		RequestSpecification requestSpecification = RestAssured.given();
 		requestSpecification.log().all();
 		requestSpecification.baseUri("https://restful-booker.herokuapp.com/");
-		requestSpecification.baseUri("booking");
+		requestSpecification.basePath("booking");
 		
 		//passing body
 		requestSpecification.body("{\r\n"
@@ -41,5 +41,8 @@ public class postBookingsTest {
 		//validate request
 		ValidatableResponse validatableResponses =  responseHits.then();
 		validatableResponses.statusCode(200);
+		
+		String responses = responseHits.body().asPrettyString();
+		System.out.println("Response: "+ responses);
 	}
 }

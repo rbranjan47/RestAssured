@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="restAssuredYT.restAssureBasics.JSONPathIntro">
+      <class name="restAssuredYT.restAssureBasics.testBearerToken">
         <methods>
-          <include name="testJSONPathTest"/>
+          <include name="testBearerToke"/>
         </methods>
-      </class> <!-- restAssuredYT.restAssureBasics.JSONPathIntro -->
+      </class> <!-- restAssuredYT.restAssureBasics.testBearerToken -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
