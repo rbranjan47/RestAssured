@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-25T23:34:43 IST" name="Default suite" finished-at="2024-02-25T23:34:48 IST" duration-ms="5496">
+  <suite started-at="2024-03-04T20:39:19 IST" name="Default suite" finished-at="2024-03-04T20:39:23 IST" duration-ms="3759">
     <groups>
     </groups>
-    <test started-at="2024-02-25T23:34:43 IST" name="Default test" finished-at="2024-02-25T23:34:48 IST" duration-ms="5496">
-      <class name="restAssuredYT.restAssureBasics.testBearerToken">
-        <test-method signature="testBearerToke()[pri:0, instance:restAssuredYT.restAssureBasics.testBearerToken@55183b20]" started-at="2024-02-25T23:34:43 IST" name="testBearerToke" finished-at="2024-02-25T23:34:48 IST" duration-ms="5431" status="PASS">
+    <test started-at="2024-03-04T20:39:19 IST" name="Default test" finished-at="2024-03-04T20:39:23 IST" duration-ms="3759">
+      <class name="restAssuredYT.restAssureBasics.assertionTiming">
+        <test-method signature="assertionTimingTest()[pri:0, instance:restAssuredYT.restAssureBasics.assertionTiming@293a5bf6]" started-at="2024-03-04T20:39:19 IST" name="assertionTimingTest" finished-at="2024-03-04T20:39:23 IST" duration-ms="3709" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBearerToke -->
-      </class> <!-- restAssuredYT.restAssureBasics.testBearerToken -->
+        </test-method> <!-- assertionTimingTest -->
+      </class> <!-- restAssuredYT.restAssureBasics.assertionTiming -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
